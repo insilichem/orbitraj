@@ -7,9 +7,13 @@ trajectory.
 It works by patching the original MD Movie and injecting new
 hooks to open and display the volume surfaces. 
 
+![Screenshot](screenshot.jpg)
+
+
 ## Features
 
 There's only one:
+
 - Load a volume file for each frame, in every format supported by Chimera. 
 - If you download [Multiwfn](http://sobereva.com/multiwfn/) separately, it will also convert wavefunction files for you automatically.
 
