@@ -11,13 +11,13 @@ import chimera.extension
 
 class OrbiTrajEMO(chimera.extension.EMO):
     def name(self):
-        return 'Plume OrbiTraj'
+        return 'Tangram OrbiTraj'
     def description(self):
         return 'Playback of Orbital trajectories'
     def categories(self):
         return ['InsiliChem']
     def icon(self):
-        return 
+        return
     def activate(self):
 	# Call the 'Movie' function in the "__init__.py" module.
         self.module().launch()
