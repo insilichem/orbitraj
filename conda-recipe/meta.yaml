@@ -1,0 +1,35 @@
+{% set name = "tangram_orbitraj" %}
+
+
+package:
+  name: {{ name|lower }}
+  version: {{ environ.get('GIT_DESCRIBE_TAG', 'v')[1:] }}
+
+source:
+  url: ../
+
+build:
+  number: 0
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+
+requirements:
+  host:
+    - python
+  run:
+    - python
+    - pychimera     >=0.2.6
+    - libtangram
+
+about:
+  home: http://github.com/insilichem/tangram_orbitraj
+  license: MIT
+  license_family: MIT
+
+  summary: "Modification of UCSF Chimera's MD Movie extension to play volumetric data"
+
+  description: |
+    Modification of UCSF Chimera's MD Movie extension to play volumetric data.
+  doc_url: http://tangram-suite.readthedocs.io/en/latest/tangram_orbitraj.html
+  dev_url: https://github.com/insilichem/tangram_orbitraj
+
+
