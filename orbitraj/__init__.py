@@ -17,3 +17,6 @@ from .core import OrbiTrajController
 
 def launch(movieFile=None):
     EnsembleLoader.loadEnsemble(OrbiTrajController, movieFile=movieFile)
+from ._version import get_versions
+__version__ = get_versions()['version']
+del get_versions
